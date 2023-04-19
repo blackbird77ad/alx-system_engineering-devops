@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "scale=2; $POWER/$DIVIDE" | tr '\n' ' ' | cut -d' ' -f1 | printf "Result: %.2f\n\n" "$(cat)"
+echo $(($POWER / $DIVIDE))
